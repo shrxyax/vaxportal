@@ -1,0 +1,194 @@
+/* 🌟 Sidebar Default (New Theme) */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background-color: #1e1e2e; /* Dark purple-blue background */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.sidebar-header h2{
+    color: #00bfa5;
+}
+/* Sidebar Header */
+.sidebar-header {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #444;
+    cursor: default;
+    color: white; /* Lighter grey for VaxPortal */
+}
+
+/* User Info */
+.sidebar-user {
+    margin: 20px 0;
+}
+
+.sidebar-user p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0;
+}
+
+.sidebar-header h2{
+    color:#00bfa5
+}
+.sidebar-user h3 {
+    font-size: 20px; /* Increased font size */
+    margin: 5px 0;
+    color: #ffffff;
+    font-style: italic; /* Italics instead of cursive */
+}
+
+
+/* Sidebar Menu */
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+
+.sidebar-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s, color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #44475a; /* Muted hover color */
+    color: #ffffff;
+}
+
+/* Sidebar Footer */
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+/* Sidebar Buttons */
+.dark-mode-btn, .live-chat-btn, .signout-btn {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-size: 14px;
+    transition: background 0.3s, color 0.3s;
+    border-radius: 5px;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+/* Dark Mode Button */
+.dark-mode-btn {
+    background-color: #4f4f4f;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.dark-mode-btn:hover {
+    background-color: #777;
+    color: #ddd;
+}
+
+/* Live Chat Button */
+.live-chat-btn {
+    background-color: #00bfa5; /* Brighter teal tone */
+    color: white;
+}
+
+.live-chat-btn:hover {
+    background-color: #00897b;
+}
+
+/* Sign Out Button */
+.signout-btn {
+    background-color: #ff1744; /* More vibrant red */
+    color: white;
+}
+
+.signout-btn:hover {
+    background-color: #d50000;
+}
+
+/* 🌙 Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: white;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+/* Sidebar in Dark Mode */
+body.dark-mode .sidebar {
+    background-color: #282a36;
+    color: white;
+    box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
+}
+
+/* Dark Mode Sidebar Menu */
+body.dark-mode .sidebar-menu li a {
+    color: white;
+}
+
+body.dark-mode .sidebar-menu li a:hover {
+    background-color: #44475a;
+}
+
+/* Dark Mode Sidebar Footer */
+body.dark-mode .sidebar-footer {
+    border-top: 1px solid #444;
+}
+
+/* Dark Mode Buttons */
+body.dark-mode .dark-mode-btn {
+    background-color: #4f4f4f;
+    color: white;
+}
+
+body.dark-mode .dark-mode-btn:hover {
+    background-color: #777;
+    color: #ddd;
+}
+
+body.dark-mode .live-chat-btn {
+    background-color: #00bfa5;
+    color: white;
+}
+
+body.dark-mode .live-chat-btn:hover {
+    background-color: #00897b;
+}
+
+body.dark-mode .signout-btn {
+    background-color: #ff1744;
+    color: white;
+}
+
+body.dark-mode .signout-btn:hover {
+    background-color: #d50000;
+}

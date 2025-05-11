@@ -1,0 +1,254 @@
+/* BookAppointment.css */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap");
+
+.book-appointment-page {
+  background-color: var(--background);
+  min-height: 100vh;
+  padding: 40px 20px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: var(--foreground);
+}
+
+
+
+.book-appointment-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.book-appointment-header {
+  margin-bottom: 32px;
+}
+
+.book-appointment-title {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.book-appointment-subtitle {
+  font-size: 18px;
+  color: var(--muted);
+}
+
+.appointment-form-wrapper {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.form-section {
+  padding: 32px;
+}
+
+.section-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 8px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--muted);
+  margin-bottom: 24px;
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  color: var(--foreground);
+  background-color: var(--card);
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.form-control:disabled {
+  background-color: var(--input);
+  color: var(--muted);
+  cursor: not-allowed;
+}
+
+.appointment-summary {
+  background-color: var(--primary-light);
+  border-radius: var(--radius);
+  padding: 20px;
+  margin-top: 8px;
+}
+
+.summary-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--foreground);
+  margin-bottom: 16px;
+}
+
+.summary-item {
+  display: flex;
+  margin-bottom: 12px;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.summary-label {
+  font-size: 16px;
+  color: var(--muted);
+}
+
+.summary-value {
+  font-size: 16px;
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.btn-cancel {
+  padding: 12px 24px;
+  background-color: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--foreground);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: var(--input);
+}
+
+.btn-confirm {
+  padding: 12px 24px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border: none;
+  border-radius: var(--radius);
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-confirm:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Dark Mode Styles */
+.dark-mode .book-appointment-page {
+  background-color: var(--foreground);
+  color: var(--muted-foreground);
+}
+
+.dark-mode .appointment-form-wrapper,
+.dark-mode .appointment-summary {
+  background-color: var(--card-foreground);
+  border: 1px solid var(--border);
+}
+
+.dark-mode .form-control {
+  background-color: var(--foreground);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+}
+
+.dark-mode .form-control:focus {
+  border-color: var(--primary);
+}
+
+.dark-mode .btn-cancel {
+  background-color: var(--card-foreground);
+  border: 1px solid var(--border);
+  color: var(--muted-foreground);
+}
+
+.dark-mode .btn-confirm {
+  background: var(--primary);
+  color: white;
+}
+
+.dark-mode .btn-confirm:hover {
+  background: var(--primary-dark);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .form-section {
+    padding: 24px;
+  }
+  .book-appointment-title {
+    font-size: 26px;
+  }
+  .form-buttons {
+    flex-direction: column-reverse;
+  }
+  .btn-cancel, .btn-confirm {
+    width: 100%;
+  }
+}
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      gap: 16px;
+    }
+    
+    .form-section {
+      padding: 24px;
+    }
+    
+    .book-appointment-title {
+      font-size: 24px;
+    }
+    
+    .form-buttons {
+      flex-direction: column-reverse;
+    }
+    
+    .btn-cancel, .btn-confirm {
+      width: 100%;
+    }
+  }
