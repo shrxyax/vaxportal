@@ -5,6 +5,7 @@ import { Link } from "react-router-dom"
 import { Calendar, Clock, MapPin, Bell, ChevronRight, Syringe } from "lucide-react"
 import Sidebar from "./Sidebar"
 import VaccinationStatusChart from "./VaccinationStatusChart"
+import Chatbot from "../components/chatbot/Chatbot"
 import "./DashboardPage.css"
 
 const DashboardPage = () => {
@@ -166,6 +167,9 @@ const DashboardPage = () => {
             </div>
           </div>
         </div>
+
+        {/* Chatbot Section */}
+        <Chatbot />
       </div>
     </div>
   )
